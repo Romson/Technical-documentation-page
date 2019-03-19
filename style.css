@@ -37,6 +37,15 @@
   background-color: #3d7e9a !important;
 }
 
+.mdnLink {
+    color: #3d7e9a !important;
+    font-size: 0.9rem !important;
+}
+
+.mdnLink:hover {
+    color: #f1f1f1 !important;
+}
+
 /* Style page content */
 body {
     color: #818181;

@@ -1,0 +1,69 @@
+/* The sidebar menu */
+.navHeader {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #3BC4AA;
+    background-color: #111;
+    display: block;
+}
+
+#navbar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+#sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #3d7e9a;
+}
+.active {
+  color: #f1f1f1 !important;
+  background-color: #3d7e9a !important;
+}
+
+/* Style page content */
+body {
+    color: #818181;
+    font-size: 1.13rem;
+    padding: 10px 60px 10px 10px;
+}
+
+header {
+    color: #3d7e9a;
+    background-color: #f5f9fa;
+    padding: 10px 0;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  #sidenav {padding-top: 15px;}
+  #sidenav a {font-size: 18px;}
+}
+
+.code {
+    background-color: #e9e5e5;
+    width: 80%;
+    padding: 20px;
+    border-left: 5px solid #3d7e9a;
+}

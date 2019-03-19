@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav id="navbar">
+            <div id="sidenav">
+                <header class="navHeader">We &hearts; JS</header>
+                <a href="#Javascript" class="nav-link active">Javascript</a>
+                <a href="#Functions" class="nav-link">Functions</a>
+                <a href="#Objects" class="nav-link">Objects</a>
+                <a href="#Arrays" class="nav-link">Arrays</a>
+                <a href="#Events" class="nav-link">Events</a>
+            </div>
+        </nav>
+
+        <main id="main-doc">
+            <div class="main">
+                <section id="Javascript" class="main-section">
+                    <header>
+                        <h1>Javascript</h1>
+                    </header>
+                    
+                    <p>
+                        JavaScript (JS) is a lightweight interpreted or JIT-compiledprogramming language with first-class functions. While it is mostwell-known as the scripting language for Web pages, manynon-browser environments also use it, such as Node.js, ApacheCouchDB and Adobe Acrobat. JavaScript is a prototype-based,multi-paradigm, dynamic language, supporting object-oriented,imperative, and declarative (e.g. functional programming) styles.Read more about JavaScript.
+                    </p>
+
+                    <p>
+                        This section is dedicated to the JavaScript language itself, andnot the parts that are specific to Web pages or other hostenvironments. For information about APIs specific to Web pages,please see Web APIs and DOM.
+                    </p>
+
+                    <p>
+                        The standard for JavaScript is ECMAScript. As of 2012, all modernbrowsers fully support ECMAScript 5.1. Older browsers support atleast ECMAScript 3. On June 17, 2015, ECMA International publishedthe sixth major version of ECMAScript, which is officially calledECMAScript 2015, and was initially referred to as ECMAScript 6 orES6. Since then, ECMAScript standards are on yearly release cycles.This documentation refers to the latest draft version, which iscurrently ECMAScript 2019.
+                    </p>
+
+                    <p>
+                        Do not confuse JavaScript with the Java programming language. Both"Java" and "JavaScript" are trademarks or registered trademarks ofOracle in the U.S. and other countries. However, the twoprogramming languages have very different syntax, semantics, anduses.
+
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="nofollow noopener">Javascript reference</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps" target="_blank" rel="nofollow noopener">JavaScript First Steps</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks" target="_blank" rel="nofollow noopener">JavaScript building blocks</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank" rel="nofollow noopener">JavaScript data types and data structures</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript" target="_blank" rel="nofollow noopener">JavaScript versions and release notes</a></li>
+                        </ul> 
+                    </p>
+
+                </section>
+                <section id="Functions" class="main-section">
+                    <header>
+                        <h2>Functions</h2>
+                    </header>
+                    <p>
+                        A function is a code snippet that can be called by other code or byitself, or a variable that refers to the function. When a functionis called, arguments are passed to the function as input, and thefunction can optionally return an output. A function in JavaScriptis also an object.
+                    </p>
+
+                    <p>
+                        A function name is an identifier declared as part of a functiondeclaration or function expression. The function name's scopedepends on whether the function name is a declaration orexpression. 
+                    </p>
+
+                    <p>
+                        An <strong>inner function</strong> is a function inside another function (square inthis case). An outer function is a function containing a function(addSquares in this case):
+
+                        <div class="code">
+                            <code>
+                                function addSquares(a,b) {
+                                    function square(x) {
+                                       return x * x;
+                                    }
+                                    return square(a) + square(b);
+                                };
+                                 //Using ECMAScript 2015 arrow notation
+                                 const addSquares = (a,b) => {
+                                    const square = x => x*x;
+                                    return square(a) + square(b);
+                                };
+                            </code>
+                        </div>
+                    </p>
+                    
+                    <p>
+                        A <strong>recursive function</strong> is a function that calls itself.
+
+                        <div class="code">
+                            <code>
+                                function loop(x) {
+                                    if (x >= 10)
+                                       return;
+                                    loop(x + 1);
+                                };
+                                 //Using ECMAScript 2015 arrow notation
+                                 const loop = x => {
+                                    if (x >= 10)
+                                       return;
+                                    loop(x + 1);
+                                };
+                            </code>
+                        </div>
+
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function">Different types of functions</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow functions</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function">First Class functions</a></li>
+                        </ul>
+                    </p>
+
+                </section>
+
+                <section id="Objects" class="main-section" >
+                    <header>
+                        <h2>Objects</h2>
+                    </header>  
+                    <p>
+                        In JavaScript, most things are objects, from core JavaScriptfeatures like strings and arrays to the browser APIs built on topof JavaScript. You can even create your own objects to encapsulaterelated functions and variables into efficient packages, and act ashandy data containers. The object-based nature of JavaScript isimportant to understand if you want to go further with yourknowledge of the language, therefore we've provided this module tohelp you. Here we teach object theory and syntax in detail, thenlook at how to create your own objects.
+                    </p>
+                    
+                    <p>
+                       <div class="code">
+                            <code>
+                                const person = { <br />
+                                    &nbsp; name: ['Bob', 'Smith'], <br />
+                                    &nbsp; age: 32, <br />
+                                    &nbsp; gender: 'male', <br />
+                                    &nbsp; interests: ['music', 'skiing'], <br />
+                                    &nbsp; bio: function() { <br />
+                                        &nbsp;&nbsp; alert(this.name[0] + ' ' + this.name[1] + ' is ' <br /> &nbsp;&nbsp;&nbsp;+this.age + ' years old. He likes ' + this.interests[0 + <br /> &nbsp;&nbsp; ' and ' + this.interests[1] + '.'); <br />
+                                    }, <br />
+                                    &nbsp;greeting: function() { <br />
+                                        &nbsp;&nbsp;&nbsp;alert('Hi! I\'m ' + this.name[0] + '.'); <br />
+                                        &nbsp;} <br />
+                                  }; <br />
+                            </code>
+                       </div>
+
+                       <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics">Object basics</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">Object prototypes</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance">Inheritance in Javascript</a></li>
+                        </ul>
+                    </p>
+                    
+                </section>
+
+                <section id="Arrays" class="main-section">
+                    <header>
+                        <h2>Arrays</h2>
+                    </header>     
+                    <p>
+                        An array is an ordered collection of data (either primitive orobject depending upon the language). Arrays are used to storemultiple values in a single variable. This is compared to avariable that can store only one value. 
+                    </p>
+                        Each item in an array has a number attached to it, called a numeric index,  that allows you to access it. In JavaScript, arrays start at index zero and  can be manipulated with various methods.
+                    <p>
+                        What an array in JavaScript looks like:
+
+                        <div class="code">
+                            <code>
+                                const myArray = [1, 2, 3, 4];
+                                const catNamesArray = ["Jacqueline", "Sophia", "Autumn"];
+                                //Arrays in JavaScript can hold different types of data, as shown above.
+                            </code>
+                        </div>
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Properties">Array properties</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods">Array methods</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Array_instances">Array instances</a></li>
+                        </ul>
+                    </p>
+
+                </section>
+
+                <section id="Events" class="main-section">
+                    <header>
+                        <h2>Events</h2>
+                    </header>
+                    <p>
+                        DOM Events are sent to notify code of interesting things that havetaken place. Each event is represented by an object which is basedon the Event interface, and may have additional custom fields andor functions used to get additional information about whathappened. Events can represent everything from basic userinteractions to automated notifications of things happening in therendering model.
+                    </p>
+
+                    <p>
+                        This article offers a list of events that can be sent; some arestandard events defined in official specifications, while othersare events used internally by specific browsers; for example,Mozilla-specific events are listed so that add-ons can use them tointeract with the browser.
+                    </p>
+
+                    <p>
+                        This example demonstrates how to use <strong>addEventListener()</strong> to watchfor mouse clicks on an element.
+                        
+                        <div class="code">
+                            <code>
+                                // Function to change the content of t2
+                                function modifyText() { <br />
+                                    &nbsp; let t2 = document.getElementById("t2"); <br />
+                                    &nbsp;&nbsp;if (t2.firstChild.nodeValue == "three") { <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;t2.firstChild.nodeValue = "two"; <br />
+                                    &nbsp;&nbsp;} else { <br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;t2.firstChild.nodeValue = "three"; <br />
+                                    &nbsp;&nbsp;} <br />
+                                } <br />
+
+                                // Add event listener to table <br />
+                                let el = document.getElementById("outside"); <br />
+                                el.addEventListener("click", modifyText, false);
+                            </code>
+                        </div>
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Why_use_addEventListener">Why use addEventListener?</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#The_value_of_this_within_the_handler">The value of this within the handler</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">Event reference</a></li>
+                        </ul>
+                    </p>
+                    
+                </section>
+
+            </div>
+        </main>
+        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
